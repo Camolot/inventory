@@ -1,9 +1,11 @@
 <html>
     <head>
         <title>Blue Candy</title>
+        <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css'>
     </head>
     <body>
-        <h1>Blue Candy:</h1>
+        <div class='container'>
+            <h1>Blue Candy:</h1>
 
         {% if candies is not empty %}
             <p>Here is all of your candy:</p>
@@ -15,5 +17,6 @@
         {% endif %}
 
         <p><a href='/'>Add more candy</a></p>
+        </div>
     </body>
 </html>

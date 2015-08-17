@@ -1,8 +1,9 @@
 <html>
     <head>
         <title>Inventory of Blue Candy</title>
-    </head>
+        <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css'>
     <body>
+        <div class='container'>
         <h1>Blue Candy:</h1>
 
         {% if candies is not empty %}
@@ -15,14 +16,16 @@
         {% endif %}
 
         <form action ='/candies' method='post'>
+            <div class='form-group'>
             <label for 'name'>Candy name</label>
             <input id='name' name='name' type='text'>
-
-            <button type='submit'>Add candy</button>
+            </div>
+            <button type='submit' class='btn btn-info'>Add candy</button>
         </form>
         <form action ='/delete_candy' method='post'>
-            <button type='submit'>Clear</button>
+            <button type='submit' class='btn btn-danger'>Clear</button>
         </form>
         <p><a href='/'>Home</a></p>
+    </div>
     </body>
 </html>
