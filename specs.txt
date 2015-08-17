@@ -1,0 +1,8 @@
+Interface: Form for user to enter items in their collection as well as a list displaying an inventory of the collection.
+
+1.  Behavior: Save an item to the inventory.
+    Input: "Blue candy"
+    Output: $item ("Blue candy")
+
+2.  Behavior: Get items from the inventory.
+    Input: 
