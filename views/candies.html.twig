@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Blue Candy</title>
+    </head>
+    <body>
+        <h1>Blue Candy:</h1>
+
+        {% if candies is not empty %}
+            <p>Here is all of your candy:</p>
+            <ul>
+                {% for candy in candies %}
+                    <li>{{ candy.getName }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+
+        <p><a href='/'>Add more candy</a></p>
+    </body>
+</html>

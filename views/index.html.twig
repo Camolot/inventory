@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Inventory of Blue Candy</title>
+    </head>
+    <body>
+        <h1>Blue Candy:</h1>
+
+        {% if candies is not empty %}
+            <p>Here is all of your candy:</p>
+            <ul>
+                {% for candy in candies %}
+                    <li>{{ candy.getName }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+
+        <form action ='/candies' method='post'>
+            <label for 'name'>Candy name</label>
+            <input id='name' name='name' type='text'>
+
+            <button type='submit'>Add candy</button>
+        </form>
+        <form action ='/delete_candy' method='post'>
+            <button type='submit'>Clear</button>
+        </form>
+        <p><a href='/'>Home</a></p>
+    </body>
+</html>
