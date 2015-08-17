@@ -17,13 +17,20 @@
 
         <form action ='/candies' method='post'>
             <div class='form-group'>
-            <label for 'name'>Candy name</label>
+            <label for='name'>Candy name</label>
             <input id='name' name='name' type='text'>
             </div>
             <button type='submit' class='btn btn-info'>Add candy</button>
         </form>
         <form action ='/delete_candy' method='post'>
             <button type='submit' class='btn btn-danger'>Clear</button>
+        </form>
+        <form action = '/found_candy'>
+            <div class='form-group'>
+                <label for='search'>Search for a candy</label>
+                <input id='search' name='search' type='text'>
+                <button type='submit' class='btn btn-primary'>Search</button>
+            </div>
         </form>
         <p><a href='/'>Home</a></p>
     </div>

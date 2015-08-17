@@ -33,6 +33,10 @@
         return $app['twig']->render('index.html.twig');
     });
 
+    $app->get("/found_candy", function() use ($app) {
+        return $app['twig']->render('found_candy.html.twig', array('candies' => Inventory::find($_GET['search'])));
+    });
+
     return $app;
 
  ?>
